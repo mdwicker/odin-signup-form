@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Bearpaw';
-    src: url('fonts/Bearpaw.woff2') format('woff2'),
-        url('fonts/Bearpaw.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -30,4 +30,25 @@ div.banner {
 div.content {
     background-color: lightgray;
     flex: 5;
+}
+
+div.logo-background {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+}
+
+.logo {
+    height: 90px;
+    width: auto;
+}
+
+.logo-text {
+    color: white;
+    font-family: 'Norse';
+    font-size: 5rem;
+    margin-left: 5px;
 }

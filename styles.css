@@ -10,45 +10,117 @@
 
 body {
     font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
 }
 
-div.container {
+.container {
     display: flex;
     width: 75vw;
     height: 100vh;
     margin: auto;
 }
 
-div.banner {
+.banner {
     background: url(images/background.jpg);
     background-position: center;
     background-size: cover;
+
     flex: 3;
-}
-
-div.content {
-    background-color: lightgray;
-    flex: 5;
-}
-
-div.logo-background {
-    background: rgba(0, 0, 0, 0.5);
     display: flex;
-    height: 125px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+}
+
+.banner-top {
+    flex: 1;
+}
+
+.banner-bottom {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-middle {
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    line-height: normal;
+    column-gap: 5px;
+
+    height: 115px;
+    width: 100%;
+
+    color: white;
+    font-family: 'Norse';
+    font-size: 4.5rem;
 }
 
 .logo {
-    height: 90px;
-    width: auto;
+    height: 95px;
 }
 
-.logo-text {
+.artist-credit {
     color: white;
-    font-family: 'Norse';
-    font-size: 5rem;
-    margin-left: 5px;
+    font-size: 0.60rem;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+.content {
+    background-color: rgb(249, 249, 249);
+    flex: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blurb {
+    padding: 0 70px 0px 40px;
+    margin-bottom: 60px;
+
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.blurb p:last-child {
+    margin-top: 25px;
+}
+
+.form-controls {
+    padding: 15px 0px 30px 40px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgb(200, 200, 200);
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.input-control-line {
+    display: flex;
+    column-gap: 50px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+    margin: 5px 0;
+}
+
+.form-submission {
+    padding: 0 40px;
+    margin-top: 20px;
 }

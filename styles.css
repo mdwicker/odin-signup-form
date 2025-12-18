@@ -10,13 +10,24 @@
 
 body {
     font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+    background-color: black;
 }
 
-h1 {
-    font-family: 'Bearpaw';
-    font-size: 2.5em;
+div.container {
+    display: flex;
+    width: 75vw;
+    height: 100vh;
+    margin: auto;
 }
 
-p {
-    font-size: 1em;
+div.banner {
+    background: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    flex: 3;
+}
+
+div.content {
+    background-color: lightgray;
+    flex: 5;
 }

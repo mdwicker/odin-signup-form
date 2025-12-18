@@ -8,9 +8,56 @@
     <title>Odin Sign-up Form</title>
 </head>
 <body>
-    <h1>Sign-up Form</h1>
-    <form action="post">
-        <p>Form will go here!</p>
-    </form>
+    <div class="container">
+        <div class="banner">
+            <div class="logo-background">
+                <img class="logo" src="images/logo.png" alt="The Odin Project logo">
+                <span class="logi-text">ODIN</span>
+            </div>
+
+            <div class="artist-credit">
+                Photo by <a href="https://unsplash.com/fr/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="blurb">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+
+                You <em>know</em> you want to.
+            </div>
+            <form>
+                <div class="input-controls">
+                    <h1>Let's do this!</h1>
+                    <div class="form-control">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="first-name" type="text">
+                    </div>
+                    <div class="form-control">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" name="last-name" type="text">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone-number">Phone Number</label>
+                        <input id="phone-number" name="phone-number" type="tel">
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="form-control">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password">
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

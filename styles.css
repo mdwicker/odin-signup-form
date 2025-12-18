@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Bearpaw';
+    src: url('fonts/Bearpaw.woff2') format('woff2'),
+        url('fonts/Bearpaw.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+}
+
+h1 {
+    font-family: 'Bearpaw';
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1em;
+}

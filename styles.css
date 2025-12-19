@@ -9,7 +9,7 @@
 
 
 body {
-    font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+    font-family:  Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     background-color: rgb(15, 15, 15);
 }
 
@@ -85,7 +85,7 @@ a {
 
 .blurb {
     padding: 0 70px 0px 40px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     font-size: 1.1rem;
     font-weight: 550;
@@ -102,6 +102,7 @@ a {
 }
 
 h1 {
+    color: rgb(60, 60, 60);
     font-size: 1.2rem;
     font-weight: 550;
     margin-bottom: 10px;
@@ -113,11 +114,38 @@ h1 {
 }
 
 .form-control {
+    width: 200px;
+    margin-bottom: 15px;
+
     display: flex;
     flex-direction: column;
-    width: 200px;
+}
 
-    margin: 5px 0;
+.form-control input {
+    padding: 2px 5px;
+    width: 185px;
+    font-size: 0.80rem;
+    font-family: system-ui, sans-serif;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 2px 2px 5px rgb(207, 207, 207);
+}
+
+input:invalid {
+    border-color: rgb(197, 0, 0);
+}
+
+.form-control label {
+    color: rgb(50, 50, 50);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .form-submission {

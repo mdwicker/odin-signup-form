@@ -13,74 +13,76 @@ body {
     background-color: rgb(15, 15, 15);
 }
 
-.container {
-    display: flex;
-    width: 75vw;
-    height: 100vh;
-    margin: auto;
-}
+h1 {
+    margin-bottom: 15px;
 
-.banner {
-    background: url(images/background.jpg);
-    background-position: center;
-    background-size: cover;
-
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 220px;
-}
-
-.banner-top {
-    flex: 1;
-}
-
-.banner-bottom {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-.banner-middle {
-    background: rgba(0, 0, 0, 0.45);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5px;
-
-    height: 115px;
-    width: 100%;
-
-    color: white;
-    font-family: 'Norse';
-    font-size: 4.5rem;
-}
-
-.logo {
-    height: 95px;
-}
-
-.artist-credit {
-    color: white;
-    font-size: 0.60rem;
-    margin-top: auto;
-    margin-bottom: 10px;
+    color: rgb(60, 60, 60);
+    font-size: 1.3rem;
+    font-weight: 550;
 }
 
 a {
     color: inherit;
 }
 
-.content {
-    background-color: rgb(249, 249, 249);
-    flex: 5;
+.container {
+    display: flex;
+
+    width: 75vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.banner {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-rows: 1fr auto 3fr;
+
+    flex: 3;
+    min-width: 220px;
+
+    background: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-background {
+    grid-row-start: 3;
 
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.banner-middle {
+    grid-row-start: 2;
+
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 5px 0;
+
+    color: white;
+    font-family: 'Norse';
+    font-size: 4.8rem;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 5;
+
+    background-color: rgb(249, 249, 249);
 }
 
 .blurb {
@@ -91,20 +93,32 @@ a {
     font-weight: 550;
 }
 
+.logo {
+    height: 105px;
+}
+
+.artist-credit {
+    margin-bottom: 10px;
+
+    color: white;
+    font-size: 0.60rem;
+}
+
 .blurb p:last-child {
     margin-top: 25px;
 }
 
 .form-controls {
-    padding: 15px 0px 20px 40px;
+    padding: 20px 40px;
     background-color: white;
     box-shadow: 0px 3px 5px rgb(200, 200, 200);
 }
 
-h1 {
-    color: rgb(60, 60, 60);
-    font-size: 1.3rem;
-    font-weight: 550;
+.form-control {
+    display: flex;
+    flex-direction: column;
+
+    width: 200px;
     margin-bottom: 15px;
 }
 
@@ -113,21 +127,15 @@ h1 {
     column-gap: 50px;
 }
 
-.form-control {
-    width: 200px;
-    margin-bottom: 15px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.form-control input {
+input {
     padding: 2px 5px;
     width: 185px;
-    font-size: 0.80rem;
-    font-family: system-ui, sans-serif;
+
     border: 1px solid #E5E7EB;
     border-radius: 3px;
+
+    font-family: system-ui, sans-serif;
+    font-size: 0.80rem;
 }
 
 input:focus {
@@ -143,8 +151,8 @@ input:invalid {
 .form-control label {
     color: rgb(50, 50, 50);
     font-size: 0.70rem;
-    text-transform: uppercase;
     font-weight: 500;
+    text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
@@ -154,23 +162,24 @@ input:invalid {
 }
 
 button {
+    padding: 10px 40px;
+    margin-bottom: 30px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
     background-color: #596D48;
     
     color: white;
     font-size: 1rem;
     font-weight: 500;
-
-    padding: 10px 40px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-
-    margin-bottom: 30px;
+    
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #718a5a;
-    cursor: pointer;
 }
 
 button:active {
@@ -178,9 +187,9 @@ button:active {
 }
 
 .form-submission a {
-    text-decoration: none;
     color: #596D48;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .form-submission a:hover {
